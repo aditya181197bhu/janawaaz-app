@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Release builds block plain HTTP by default. The demo backend runs on a laptop
+  without HTTPS and its Wi-Fi IP changes, so plain HTTP is allowed for this demo.
+  Map tiles are fetched over HTTPS regardless.
+  TODO: remove this file (and the manifest reference) once the backend is on HTTPS.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
